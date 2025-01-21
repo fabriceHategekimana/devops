@@ -7,4 +7,8 @@ module git {
 		git commit -m $message 
 		git push
 	}
+
+	export alias status = git status
+	export alias log = git log
+	export alias ui = multiplexer floating new --command lazygit
 }
